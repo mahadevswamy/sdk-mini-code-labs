@@ -42,7 +42,7 @@ Completing this tutorial should take about 30 minutes.
   Pull all the fabric images like ca, orderer, peer and bring up the docker containers.
 
   ```
-  cd Local-Node/
+  cd artifacts/
   docker-compose up -d
   ```
 
@@ -55,7 +55,7 @@ Completing this tutorial should take about 30 minutes.
   A Hyperledger Fabric channel is a private “subnet” of communication between two or more specific network members, for the purpose of conducting private and confidential transactions. A channel is defined by members (organizations), anchor peers per member, the shared ledger, chaincode application(s) and the ordering service node(s). Each transaction on the network is executed on a channel, where each party must be authenticated and authorized to transact on that channel.
 
   ```
-  cd app
+  cd client
   run 'node create-channel.js'
   ```
 
@@ -66,7 +66,7 @@ Completing this tutorial should take about 30 minutes.
   Chaincode is a program, written in Go, node.js, or Java that implements a prescribed interface. Chaincode runs in a secured Docker container isolated from the endorsing peer process. Chaincode initializes and manages ledger state through transactions submitted by applications.
 
   ```
-  cd app
+  cd client
   run 'node deploy.js'
   ```
 
@@ -78,7 +78,7 @@ Completing this tutorial should take about 30 minutes.
   To update or query the ledger in a proposal transaction, need to invoke chaincode. To invoke chaincode you need the function name which is defined in chaincode and its arguments. Additionally, the user context is also required to perform invoke operation.
 
   ```
-  cd app
+  cd client
   run 'node invoke.js'
   ```
 
