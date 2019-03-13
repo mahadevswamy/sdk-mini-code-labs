@@ -1,0 +1,9 @@
+{
+  "connection_file": "mychannel_fabcar_profile.json",
+  "appAdmin": "admin",
+  "appAdminSecret": "adminpw",
+  "orgMSPID": "org1msp",
+  "caName": "184.172.233.56:30040",
+  "userName": "IBMCODE",
+  "gatewayDiscovery": {"enabled": true,"asLocalhost": false}
+}
