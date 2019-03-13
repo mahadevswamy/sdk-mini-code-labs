@@ -67,7 +67,7 @@ For a different, Connection Profile-
 
  ![packageFile](https://github.com/IBM/car-auction-network-fabric-node-sdk/blob/master/docs/enrollAdmin.gif)
  
- And in the code uncomment the line (fabric_ca_client = new Fabric_CA_Client('https://<enrollID>:<enrollSecret>@<ca_url_with_port>', null ,'<caName>', crypto_suite);) to replace with your Connection Profile-
+ And in the code replace the line (fabric_ca_client = new Fabric_CA_Client('https://<enrollID>:<enrollSecret>@<ca_url_with_port>', null ,'<caName>', crypto_suite);) with your Connection Profile-
 
 We will need 4 things from the Certificate Authority
 
