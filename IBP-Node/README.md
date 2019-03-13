@@ -65,7 +65,7 @@ When your network was created in the Starter Plan, each organization had an Admi
 
 For a different, Connection Profile-
 
- ![packageFile](/docs/enrollAdmin.gif)
+ ![packageFile](https://github.com/IBM/car-auction-network-fabric-node-sdk/blob/master/docs/enrollAdmin.gif)
  
  And in the code uncomment the line (fabric_ca_client = new Fabric_CA_Client('https://<enrollID>:<enrollSecret>@<ca_url_with_port>', null ,'<caName>', crypto_suite);) to replace with your Connection Profile-
 
