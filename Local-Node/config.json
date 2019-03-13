@@ -1,0 +1,30 @@
+{
+   "chainName":"fabric-client1",
+   "chaincodeId":"newchaincodeID8",
+   "channelName":"mychannel",
+   "chaincodeVersion": "v0",
+   "GOPATH":"../chaincode",
+   "chaincodePath":"github.com/sample",
+   "keyValueStore":"/tmp/fabric-client-kvs",
+   "channelConfigurationTxn": "../artifacts/channel/mychannel.tx",
+   "orgsList": ["org1","org2"],
+   "eventWaitTime":"30000",
+   "users":[
+      {
+         "username":"admin",
+         "secret":"adminpw"
+      }
+   ],
+   "deployRequest":{
+      "functionName":"init",
+      "args":[""]
+   },
+   "invokeRequest":{
+    "functionName": "createCar",
+    "args":["MyCar", "Mercedes", "S-Class", "blue", "Pushpa"]
+  },
+   "queryRequest":{
+     "functionName": "queryCar",
+   "args":["MyCar"]
+    }
+}
